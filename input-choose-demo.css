@@ -1,0 +1,38 @@
+.input-choose{
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+}
+.input-choose>.input-choose-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+.input-choose>.input-choose-ul{
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: none;
+    background-color: #ffffff;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.input-choose>.input-choose-ul>.input-choose-li{
+    box-sizing: border-box;
+    padding: 0 8px;
+    cursor: pointer;
+}
+.input-choose>.input-choose-ul>.input-choose-li:hover{
+    background-color: #eeeeee;
+    color: orange;
+}

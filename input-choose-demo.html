@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="input-choose-demo.css">
+</head>
+<style>
+    html,body{
+        background-color: #eeeeee;
+    }
+    #demo{
+        height: 40px;
+    }
+    #selectDemo{
+        width: 100px;
+        height: 30px;
+    }
+</style>
+<body>
+<div id="demo">
+    <select name="" id="selectDemo">
+        <option value="1">11111111</option>
+        <option value="2">22222222</option>
+        <option value="3">33333333</option>
+        <option value="4">44444444</option>
+        <option value="5">55555555</option>
+    </select>
+    <select name="" id="selectDemo2">
+        <option value="11">11111111</option>
+        <option value="21">22211112</option>
+        <option value="31">3331111333</option>
+        <option value="41">44111144</option>
+        <option value="51">51111555</option>
+    </select>
+    <!--<div class="input-choose">-->
+        <!--<input type="text" class="input-choose-input">-->
+        <!--<ul class="input-choose-ul">-->
+            <!--<li class="input-choose-li">asdasd</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+<script src="input-choose-demo.js" type="text/javascript"></script>
+<script>
+    //用法
+    // 初始化  必须为 select
+    // 根据id  初始化，如果class唯一  也可以
+    // 获取数据 使用 demo.getData()
+    // select  的宽高 边框 字体会被同步到插件中去
+    var demo,demo2;
+    window.onload = function () {
+        demo = $("#selectDemo").inputChoose()
+        demo2 = $("#selectDemo2").inputChoose()
+        // 获取数据
+        console.log(demo.getData())
+    }
+</script>
+</body>
+</html>
